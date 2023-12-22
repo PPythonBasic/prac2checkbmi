@@ -10,3 +10,16 @@
 
 
 ### bmi = weight / (height/100) ** 2
+weight = int(input("Enter weight : "))
+height = int(input("Enter height : "))
+bmi = weight / (height/100) ** 2
+if bmi >= 40:
+    print("คุณอ้วนเกินไป อันตรายมาก !!!")
+elif bmi >= 30 and bmi <= 39.9 :
+    print("คุณอ้วนแล้ว")
+elif bmi >= 25 and bmi <= 29.9 :
+    print("คุณนํ้าหนักเกิน แต่ยังไม่เรียกว่าอ้วน")
+elif bmi >= 18.5 and bmi <= 24.9 :
+    print("คุณอยู่เกณฑ์เหมาะสม นํ้าหนักตัวปกติ")
+else:
+    print("คุณผอมเกินไป")
